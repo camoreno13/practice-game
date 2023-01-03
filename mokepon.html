@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mokepon</title>
+    <!-- agregar js -->
     <script src="./mokepon.js"></script>
-    <link rel="stylesheet" href="./mokepon.css">
+    <!-- agregar css -->
+    <link rel="stylesheet" href="./mokepon.css" />
 </head>
+
 <body>
-    <h1>Mokepon game of platzi</h1>
     <section id="seleccionar-mascota">
-        <h1>seleccionar mascota </h1>
-        mascota: 
-        <label for="Hipogoroth"> Hipogoroth </label>
-        <input type="radio" name="mascota" id="Hipogoroth">
-        
-        <label for="plantadigoth"> plantadigoth </label>
-        <input type="radio" name="mascota" id="plantadigoth">
-        
-        <label for="acuatodogth"> acuatodogth </label>
-        <input type="radio" name="mascota" id="acuatodogth">
+        <h1 class="title">Mokepon game of platzi</h1>
+        <h1 class="subtitle">seleccionar mascota</h1>
+
+        <div class="cards">
+            <input type="radio" name="mascota" id="Hipogoroth" />
+            <label for="Hipogoroth" class="card-mokepon">
+                <p>Hipodoge</p>
+                <img src="./assets/hipo.png" alt="" />
+            </label>
+
+            <input type="radio" name="mascota" id="plantadigoth" />
+            <label for="plantadigoth" class="card-mokepon">
+                <p>Capi</p>
+                <img src="./assets/capi.png" alt="" />
+            </label>
+
+            <input type="radio" name="mascota" id="acuatodogth" />
+            <label for="acuatodogth" class="card-mokepon">
+                <p>Rati</p>
+                <img src="./assets/rati.png" alt="" />
+            </label>
+        </div>
 
         <button id="boton-mascota">seleccionar mascota</button>
     </section>
 
-    
     <section id="seleccionar-ataque">
-        <h1>seleccionar ataque</h1>
-        <button id="ataque-fuego">Fuego 🔥</button>
-        <button id="ataque-agua">Agua 💧</button>
-        <button id="ataque-tierra">Tierra 🌱</button>
-    </section>
+        <h1 class="title">Mokepon game of platzi</h1>
+        <h1 class="subtitle">seleccionar ataque</h1>
 
-    <h1>Mensajes</h1>
+        <div class="cards-ataques">
+            <button class="btn-ataques" id="ataque-fuego">Fuego 🔥</button>
+            <button class="btn-ataques" id="ataque-agua">Agua 💧</button>
+            <button class="btn-ataques" id="ataque-tierra">Tierra 🌱</button>
+        </div>
 
-    <section id="mensajes">
-        <p>has seleccionado a:  <span id="mascota-jugador"> </span> y tiene <spa id="vidas-jugador">3</spa> puntos de vida.</p>
-        <p>el enemigo ha seleccionado a: <span id="mascota-enemigo"></span> y tiene <span id="vidas-enemigo">3</span> puntos de vida.</p>
-        <span id="status">
+        <div>
+            <h1 class="subtitle">Resultado</h1>
+            <section id="sec-results">
 
-        </span>
-    </section>
+                <div id="resultado"></div>
+                <button id="btn-reinicar">reiniciar</button>
+            </section>
+        </div>
 
-    <button id="btn-reinicar">reiniciar</button>
-    <!-- <script src="./mokepon.js"></script> -->
+        <div class="grid-results">
+            <div id="id-jugador">
+                <p> Jugador </p>
+                <span id="vidas-jugador">3</span>
+                <p id="mascota-jugador"> </p>
+                <div id="ataque-jugador"></div>
+            </div>
+            <div id="id-enemigo">
+                <p>Enemigo </p>
+                <span id="vidas-enemigo">3</span>
+                <p id="mascota-enemigo"></p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        </div>
+        <span id="status" style="color: white"> </span>
+        <!-- <script src="./mokepon.js"></script> -->
 </body>
+
 </html>
