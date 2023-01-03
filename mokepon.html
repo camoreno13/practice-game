@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+    <script src="./mokepon.js"></script>
+    <link rel="stylesheet" href="./mokepon.css">
+</head>
+<body>
+    <h1>Mokepon game of platzi</h1>
+    <section id="seleccionar-mascota">
+        <h1>seleccionar mascota </h1>
+        mascota: 
+        <label for="Hipogoroth"> Hipogoroth </label>
+        <input type="radio" name="mascota" id="Hipogoroth">
+        
+        <label for="plantadigoth"> plantadigoth </label>
+        <input type="radio" name="mascota" id="plantadigoth">
+        
+        <label for="acuatodogth"> acuatodogth </label>
+        <input type="radio" name="mascota" id="acuatodogth">
+
+        <button id="boton-mascota">seleccionar mascota</button>
+    </section>
+
+    
+    <section id="seleccionar-ataque">
+        <h1>seleccionar ataque</h1>
+        <button id="ataque-fuego">Fuego 🔥</button>
+        <button id="ataque-agua">Agua 💧</button>
+        <button id="ataque-tierra">Tierra 🌱</button>
+    </section>
+
+    <h1>Mensajes</h1>
+
+    <section id="mensajes">
+        <p>has seleccionado a:  <span id="mascota-jugador"> </span> y tiene <spa id="vidas-jugador">3</spa> puntos de vida.</p>
+        <p>el enemigo ha seleccionado a: <span id="mascota-enemigo"></span> y tiene <span id="vidas-enemigo">3</span> puntos de vida.</p>
+        <span id="status">
+
+        </span>
+    </section>
+
+    <button id="btn-reinicar">reiniciar</button>
+    <!-- <script src="./mokepon.js"></script> -->
+</body>
+</html>
