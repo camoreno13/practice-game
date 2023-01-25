@@ -115,6 +115,17 @@ input {
     font-size: 18px;
 }
 
+#container-map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    border: 3px solid black;
+}
+
 .cards-ataques{
     display: flex;
     gap: 50px;

@@ -16,7 +16,6 @@
     <section id="seleccionar-mascota">
         <h1 class="title">Mokepon game of platzi</h1>
         <h1 class="subtitle">seleccionar mascota</h1>
-
         <div class="cards" id="cards">
             <!-- forma manual comentada -->
             <!-- <input type="radio" name="mascota" id="Hipogoroth" />
@@ -39,6 +38,22 @@
         </div>
 
         <button id="boton-mascota">seleccionar mascota</button>
+    </section>
+
+    <section id="container-map">
+        <h1> Bienvenido a MopemonLandia</h1>
+        <canvas id="map"></canvas>
+        <!-- <button onclick="moverAr()">mover</button>
+        <button onclick="moverAb()">mover</button>
+        <button onclick="moverDer()">mover</button>
+        <button onclick="moverIzq()">mover</button> -->
+
+        <button onmouseup="detenerMovimiento()" onmousedown="moverAr()">mover</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverAb()">mover</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverDer()">mover</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverIzq()">mover</button>
+
+        
     </section>
 
     <section id="seleccionar-ataque">
