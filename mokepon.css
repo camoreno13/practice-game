@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #0081C9;
+}
+.title{
+    color : #FFC93C;
+    font-size: 40px;
+}
+
+.subtitle{
+    color: white;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+}
+
+.card-mokepon{
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    padding: 2px;
+    background-color: #5BC0F8;
+    box-sizing: border-box;
+    border : 2px solid #0A2647;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:checked + label {
+background-color: #5193de;
+}
+
+.card-mokepon img{
+    width: 100px;
+}
+
+input {
+    /* se deja de ver el radio */
+    display: none;
+
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid red;
+    color: white;
+    font-size: 16px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ataques{
+    width: 160px;
+    height: 49px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 23px;
+}
+
+#sec-results{
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: pink;
+    gap: 20px;
+}
+
+#resultado{
+    width: auto;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-reinicar{
+    width: auto;
+    border: none;
+    color: blueviolet;
+    background-color: transparent;
+    border-bottom: 1px solid blueviolet;
+}
+
+.grid-results{
+    margin: 10px 0 0 0;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    gap : 20px
+}
+
+#id-jugador , #id-enemigo{
+    color: white;
+    font-size: 18px;
+}
+
+#container-map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    border: 3px solid black;
+}
+
+.cards-ataques{
+    display: flex;
+    gap: 50px;
+}
+
+@media (max-width : 360px){
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards-ataques{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+    }
+}
